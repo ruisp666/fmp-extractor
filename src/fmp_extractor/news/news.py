@@ -1,31 +1,32 @@
 import logging
 
 from ..json_extractor import get_jsonparsed_data
-
+from ..config import API_KEY
 # Set the logging level
 logging.getLogger().setLevel(logging.INFO)
 
 
-def extract_top_news(tickers, api_key: str, limit=15):
+def extract_top_news(tickers, limit=15):
     """
     Extracts news for a list of tickers
     Parameters
     ----------
     tickers: list
         Contains the tickers
-    api_key: str
     limit: int
-        The maximum number of news
+        The maximum number of news items
     Returns
     -------
-    dict
+    tickers_news: dictionary
+        Contains the news items
+
     """
     # Treat the single ticker case in case a string is input
     if isinstance(tickers, str):
         tickers = [tickers]
     tickers_news = {}
     for ticker in tickers:
-        url = f'https://financialmodelingprep.com/api/v3/stock_news?tickers={ticker}&limit={limit}&apikey={api_key}'
+        url = f'https://financialmodelingprep.com/api/v3/stock_news?tickers={ticker}&limit={limit}&apikey={API_KEY}'
         full_info = get_jsonparsed_data(url)
         tickers_news[ticker] = full_info
     return tickers_news

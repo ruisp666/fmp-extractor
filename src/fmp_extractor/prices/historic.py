@@ -4,8 +4,8 @@ import logging
 import pandas as pd
 import requests
 
-from ..config import API_KEY
-from ..json_extractor import get_jsonparsed_data
+from fmp_extractor.config import API_KEY
+from fmp_extractor.json_extractor import get_jsonparsed_data
 
 
 def extract_prices_history(tickers: list, start_date: str = '', end_date: str = ''):
@@ -62,3 +62,19 @@ def extract_prices_bulk(date: str):
     response = requests.get(url, params={'date': date, 'apikey': API_KEY})
     bulk_prices_df = pd.read_csv(io.BytesIO(response.content), encoding='utf-8')
     return bulk_prices_df
+
+
+def extract_prices_high_frequency(ticker: str, freq: str):
+    """
+    Extract Prices at higher frequency than one day for a given ticker.
+    -------------
+    ticker: str
+    freq: str
+        One of '1min', '5min', '15min', '30min', '1hour', '4hour'
+    return pandas dataframe with OHLC prices and volume
+    """
+    url = f'https://financialmodelingprep.com/api/v3/historical-chart/{freq}/{ticker}?apikey={API_KEY}'
+    full_info = get_jsonparsed_data(url)
+    prices = pd.DataFrame.from_records(full_info)
+    prices['date'] = pd.to_datetime(prices['date'])
+    return prices
