@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cee0f969-1d2b-4516-aa2c-018bf5eefff8" name="Default Changelist" comment="First commit">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/fmp-extractor.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fmp_extractor/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fmp_extractor/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fmp_extractor/earnings/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fmp_extractor/earnings/earnings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fmp_extractor/fundamentals/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fmp_extractor/fundamentals/fundamentals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fmp_extractor/industry/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fmp_extractor/industry/industry.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fmp_extractor/json_extractor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fmp_extractor/news/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fmp_extractor/news/news.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fmp_extractor/other/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fmp_extractor/other/others.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fmp_extractor/prices/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fmp_extractor/prices/historic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fmp_extractor/prices/live.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="27zrLdoBhgAJiNxw9z5jbD0lNBc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cee0f969-1d2b-4516-aa2c-018bf5eefff8" name="Default Changelist" comment="" />
+      <created>1650333702536</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650333702536</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
