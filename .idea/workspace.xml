@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cee0f969-1d2b-4516-aa2c-018bf5eefff8" name="Default Changelist" comment="Added extractor for high frequency prices.">
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/fmp-extractor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fmp-extractor.iml" afterDir="false" />
+    <list default="true" id="cee0f969-1d2b-4516-aa2c-018bf5eefff8" name="Default Changelist" comment="Added column with symbol for easier concatenation with multiple symbols.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fmp_extractor/prices/historic.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/fmp_extractor/prices/historic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fmp_extractor/fundamentals/fundamentals.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/fmp_extractor/fundamentals/fundamentals.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650875844062</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added column with symbol for easier concatenation with multiple symbols.">
+      <created>1650885558792</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650885558793</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,7 +175,8 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Added extractor for high frequency prices." />
     <MESSAGE value="Added first test." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added first test." />
+    <MESSAGE value="Added column with symbol for easier concatenation with multiple symbols." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added column with symbol for easier concatenation with multiple symbols." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
