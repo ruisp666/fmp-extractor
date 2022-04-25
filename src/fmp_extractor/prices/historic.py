@@ -77,4 +77,7 @@ def extract_prices_high_frequency(ticker: str, freq: str):
     full_info = get_jsonparsed_data(url)
     prices = pd.DataFrame.from_records(full_info)
     prices['date'] = pd.to_datetime(prices['date'])
+    prices['symbol'] = ticker
     return prices
+
+
