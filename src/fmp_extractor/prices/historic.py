@@ -81,3 +81,18 @@ def extract_prices_high_frequency(ticker: str, freq: str):
     return prices
 
 
+def get_price_change_curve(ticker: str):
+    """
+    Extract Historic Changes for 1 day, 1, 3, 6 months, 1, 5 ,10 years and ytd.
+    -------------
+    ticker: str
+    return pandas dataframe with changes for one ticker
+    """
+    url = f'https://financialmodelingprep.com/api/v3/stock-price-change/{ticker}?apikey={API_KEY}'
+    full_info = get_jsonparsed_data(url)
+    historical_changes = pd.DataFrame.from_records(full_info)
+    historical_changes['date'] = pd.Timestamp.today()
+    return historical_changes
+
+
+
