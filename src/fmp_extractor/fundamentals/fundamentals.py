@@ -86,7 +86,7 @@ def get_enterprise_value(tickers, period='year'):
     """
     tickers_ev = {}
     for ticker in tickers:
-        url = f'https://financialmodelingprep.com/api/v3/enterprise-values/{ticker}?period={period}&limit=40&apikey' \
+        url = f'https://financialmodelingprep.com/api/v3/enterprise-values/{ticker}?period={period}&limit=400&apikey' \
               f'={API_KEY} '
         full_info = get_jsonparsed_data(url)
         tickers_ev[ticker] = full_info
