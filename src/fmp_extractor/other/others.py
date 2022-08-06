@@ -78,3 +78,23 @@ def extract_list():
     url = f'https://financialmodelingprep.com/api/v3/stock/list?apikey={API_KEY}'
     list_sym = get_jsonparsed_data(url)
     return pd.DataFrame.from_records(list_sym)
+
+
+def get_profile(ticker):
+    """
+    Returns the full profile of a company for a given ticker.
+
+    Parameters
+    ----------
+    ticker : ticker
+        The ticker of the company
+
+    Returns
+    -------
+    df : pd.DataFrame
+        The profile as a dataframe
+    """
+    url = f'https://financialmodelingprep.com/api/v3/profile/{ticker}?apikey={API_KEY}'
+    list_sym = get_jsonparsed_data(url)
+    df = pd.DataFrame.from_records(list_sym)
+    return df
